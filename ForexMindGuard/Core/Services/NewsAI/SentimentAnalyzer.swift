@@ -36,7 +36,7 @@ final class SentimentAnalyzer {
     ]
 
     // MARK: - Analyse
-    func analyse(text: String) -> SentimentResult {
+    func analyze(text: String) -> SentimentResult {
         let lowered = text.lowercased()
 
         var bullishScore = 0.0
@@ -51,7 +51,7 @@ final class SentimentAnalyzer {
         }
 
         // Apple NaturalLanguage sentiment (on-device)
-        let nlScore = appleSentimentScore(text: text)
+        let nlScore = appleNLSentimentScore(text: text)
         // NL returns -1.0 (negative) to +1.0 (positive)
         if nlScore > 0.1 { bullishScore += nlScore * 2 }
         else if nlScore < -0.1 { bearishScore += abs(nlScore) * 2 }
@@ -87,7 +87,7 @@ final class SentimentAnalyzer {
     }
 
     // MARK: - Apple NaturalLanguage sentiment
-    private func appleSentimentScore(text: String) -> Double {
+    private func appleNLSentimentScore(text: String) -> Double {
         let tagger = NLTagger(tagSchemes: [.sentimentScore])
         tagger.string = text
         let (tag, _) = tagger.tag(at: text.startIndex, unit: .paragraph, scheme: .sentimentScore)

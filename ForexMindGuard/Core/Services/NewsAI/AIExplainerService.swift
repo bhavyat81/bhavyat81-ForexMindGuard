@@ -76,7 +76,7 @@ final class AIExplainerService: ObservableObject, ExplanationProvider {
         let aiText = try await callOpenAI(prompt: prompt)
 
         // 4. Sentiment analysis
-        let sentiment = sentimentService.analyse(text: aiText)
+        let sentiment = sentimentService.analyze(text: aiText)
 
         // 5. Extract headline (first sentence of AI response)
         let headline = extractHeadline(from: aiText, movement: movement)

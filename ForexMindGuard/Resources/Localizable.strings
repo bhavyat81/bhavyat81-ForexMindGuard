@@ -14,7 +14,7 @@
 "dashboard.trading_locked"     = "🔒 Locked";
 "dashboard.watchlist_section"  = "Watchlist";
 "dashboard.see_all"            = "See All";
-"dashboard.behaviour_section"  = "Behaviour Monitor";
+"dashboard.behaviour_section"  = "Behavior Monitor";
 "dashboard.no_risk_patterns"   = "No risk patterns detected";
 "dashboard.risk_patterns"      = "%d risk pattern(s) detected";
 
