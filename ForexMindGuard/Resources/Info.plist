@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- App display name -->
+    <key>CFBundleDisplayName</key>
+    <string>ForexMindGuard</string>
+
+    <!-- Bundle identifier -->
+    <key>CFBundleIdentifier</key>
+    <string>com.forexmindguard.app</string>
+
+    <!-- Version -->
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+
+    <!-- Minimum iOS version -->
+    <key>LSMinimumSystemVersion</key>
+    <string>17.0</string>
+
+    <!-- Supported interface orientations -->
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationPortraitUpsideDown</string>
+    </array>
+
+    <!-- HealthKit usage descriptions (REQUIRED for App Store) -->
+    <key>NSHealthShareUsageDescription</key>
+    <string>ForexMindGuard reads your heart rate and heart rate variability to detect stress and emotional states that may affect your trading decisions. Your health data never leaves your device.</string>
+    <key>NSHealthUpdateUsageDescription</key>
+    <string>ForexMindGuard does not write any health data.</string>
+
+    <!-- Camera usage (ARKit face tracking) -->
+    <key>NSCameraUsageDescription</key>
+    <string>ForexMindGuard uses the TrueDepth camera and ARKit to analyse your facial expressions and detect emotions like stress, fear, and greed in real time. No video is recorded or stored.</string>
+
+    <!-- Face ID / TrueDepth camera -->
+    <key>NSFaceIDUsageDescription</key>
+    <string>ForexMindGuard uses face tracking to monitor your emotional state during trading sessions.</string>
+
+    <!-- Location (not used but required if Watch uses location) -->
+
+    <!-- Background modes -->
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>fetch</string>
+        <string>remote-notification</string>
+        <string>processing</string>
+    </array>
+
+    <!-- Required device capabilities -->
+    <key>UIRequiredDeviceCapabilities</key>
+    <array>
+        <string>arm64</string>
+        <string>healthkit</string>
+    </array>
+
+    <!-- HealthKit entitlement -->
+    <key>com.apple.developer.healthkit</key>
+    <true/>
+    <key>com.apple.developer.healthkit.access</key>
+    <array>
+        <string>health-records</string>
+    </array>
+
+    <!-- App Transport Security (allow HTTPS to API endpoints) -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <false/>
+        <key>NSExceptionDomains</key>
+        <dict>
+            <key>api.openai.com</key>
+            <dict>
+                <key>NSExceptionAllowsInsecureHTTPLoads</key>
+                <false/>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+            </dict>
+            <key>marketdata.tradermade.com</key>
+            <dict>
+                <key>NSExceptionAllowsInsecureHTTPLoads</key>
+                <false/>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+            </dict>
+        </dict>
+    </dict>
+
+    <!-- Launch screen -->
+    <key>UILaunchScreen</key>
+    <dict/>
+</dict>
+</plist>
