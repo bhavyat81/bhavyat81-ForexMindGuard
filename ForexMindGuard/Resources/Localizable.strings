@@ -1,0 +1,125 @@
+/* Localizable.strings – ForexMindGuard (English) */
+
+/* Navigation */
+"tab.dashboard"     = "Dashboard";
+"tab.emotions"      = "Emotions";
+"tab.explainer"     = "Explainer";
+"tab.watchlist"     = "Watchlist";
+"tab.settings"      = "Settings";
+
+/* Dashboard */
+"dashboard.title"              = "ForexMindGuard";
+"dashboard.stress_score"       = "Stress Score";
+"dashboard.trading_allowed"    = "✅ Trading Allowed";
+"dashboard.trading_locked"     = "🔒 Locked";
+"dashboard.watchlist_section"  = "Watchlist";
+"dashboard.see_all"            = "See All";
+"dashboard.behaviour_section"  = "Behavior Monitor";
+"dashboard.no_risk_patterns"   = "No risk patterns detected";
+"dashboard.risk_patterns"      = "%d risk pattern(s) detected";
+
+/* Emotion states */
+"emotion.calm"     = "Calm";
+"emotion.neutral"  = "Neutral";
+"emotion.anxious"  = "Anxious";
+"emotion.stressed" = "Stressed";
+"emotion.fearful"  = "Fearful";
+"emotion.greedy"   = "Greedy";
+"emotion.excited"  = "Excited";
+"emotion.angry"    = "Angry";
+
+/* Stress levels */
+"stress.low"      = "LOW";
+"stress.moderate" = "MODERATE";
+"stress.high"     = "HIGH";
+"stress.critical" = "CRITICAL";
+
+/* Warnings */
+"warning.anxious"  = "You appear anxious. Consider reducing position sizes.";
+"warning.stressed" = "High stress detected. Take a break before placing new trades.";
+"warning.fearful"  = "Fear detected — avoid closing positions prematurely.";
+"warning.greedy"   = "Greed detected — stick to your risk management rules.";
+"warning.excited"  = "Over-excitement can lead to FOMO trades. Slow down.";
+"warning.angry"    = "Anger detected — DO NOT trade. Step away immediately.";
+
+/* Trading Guard */
+"guard.title"              = "Trading Guard";
+"guard.locked"             = "Trading Locked";
+"guard.active"             = "Trading Active";
+"guard.override"           = "Override Lock";
+"guard.override_confirm"   = "Are you sure you want to override the trading lock?";
+"guard.override_message"   = "Overriding while stressed increases the risk of poor trades. Are you certain?";
+"guard.override_button"    = "Override Lock";
+"guard.cancel"             = "Cancel";
+"guard.normal_message"     = "All systems normal. Stay disciplined.";
+"guard.lock_history"       = "Lock History";
+"guard.no_locks"           = "No locks recorded this session.";
+"guard.overridden"         = "Overridden";
+
+/* Smart Shield */
+"smart_shield.title"          = "Smart Shield Active";
+"smart_shield.subtitle"       = "High stress + significant market move\ndetected simultaneously";
+"smart_shield.recommendation" = "📋 Recommendation: Step away from the screen, breathe, and review the market explanation before trading again.";
+"smart_shield.read_explanation" = "Read Full Explanation";
+"smart_shield.override"       = "Override (Not Recommended)";
+
+/* Cooldown */
+"cooldown.remaining"  = "remaining";
+"cooldown.title"      = "Cooldown";
+"cooldown.complete"   = "Cooldown Complete";
+"cooldown.resume"     = "You may now resume trading.";
+
+/* Market Explainer */
+"explainer.title"           = "AI Explainer";
+"explainer.watching"        = "Watching for Market Moves";
+"explainer.empty_message"   = "When a currency pair moves significantly,\nthe AI will explain why here.";
+"explainer.loading"         = "Analysing market movement…";
+"explainer.sources"         = "Sources";
+"explider.confidence"       = "Confidence";
+"explainer.ai_analysis"     = "AI Analysis";
+
+/* Sentiment */
+"sentiment.bullish" = "Bullish";
+"sentiment.bearish" = "Bearish";
+"sentiment.neutral" = "Neutral";
+
+/* Watchlist */
+"watchlist.title"     = "Watchlist";
+"watchlist.live"      = "Live";
+"watchlist.connecting" = "Connecting…";
+"watchlist.add"       = "Add Pair";
+"watchlist.add_prompt" = "Add Currency Pair";
+"watchlist.base"      = "Base (e.g. EUR)";
+"watchlist.quote"     = "Quote (e.g. USD)";
+
+/* Settings */
+"settings.title"              = "Settings";
+"settings.emotion_guard"      = "Emotion Guard";
+"settings.stress_thresholds"  = "Stress Thresholds";
+"settings.notifications"      = "Notification Settings";
+"settings.watch_setup"        = "Apple Watch Setup";
+"settings.market_data"        = "Market Data";
+"settings.health"             = "Health";
+"settings.face_tracking"      = "Face Tracking";
+"settings.resting_hr"         = "Resting Heart Rate";
+"settings.about"              = "About";
+"settings.version"            = "Version";
+"settings.privacy"            = "Privacy Policy";
+"settings.support"            = "Support";
+
+/* Onboarding */
+"onboarding.skip"           = "Skip";
+"onboarding.next"           = "Next";
+"onboarding.get_started"    = "Get Started";
+"onboarding.permissions"    = "Permissions Required";
+"onboarding.allow"          = "Allow";
+"onboarding.health_title"   = "Health";
+"onboarding.camera_title"   = "Camera & Face Tracking";
+"onboarding.notif_title"    = "Notifications";
+
+/* Errors */
+"error.no_healthkit"     = "HealthKit is not available on this device.";
+"error.auth_denied"      = "Heart rate access was denied. Enable it in Settings > Privacy > Health.";
+"error.network"          = "Network error. Check your internet connection.";
+"error.api_error"        = "API error. Please try again.";
+"error.rate_limited"     = "API rate limit reached. Try again later.";
